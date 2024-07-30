@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Header({ fetchWeather }) {
   const [city, setCity] = useState("");
-  const handleChange = (e) => setCity(e.target.value);
+  const handleChange = (e) => setCity(e.target.value)
   const onFetch = () => fetchWeather(city)
   
   return (
@@ -14,7 +14,7 @@ export default function Header({ fetchWeather }) {
         
         onChange={handleChange}
       />
-      <button onClick={onFetch} type="button"> Get Weather</button>
+      <button onClick={onFetch}>Get Weather</button>
       <h2>Current Weather:</h2>
       </header>
   );
