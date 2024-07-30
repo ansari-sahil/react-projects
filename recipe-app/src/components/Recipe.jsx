@@ -11,5 +11,5 @@ export default function Recipe({recipe}){
                 ))}
             </ul>
         </div>
-    )
-}
+    );
+};
