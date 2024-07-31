@@ -1,8 +1,4 @@
-export default function Weather({ weather }) {
-    if (!weather || !weather.name || !weather.sys || !weather.weather || !weather.main || !weather.wind) {
-      return <div>No weather data available.</div>;
-    }
-  
+export default function Weather({ weather }) { 
     return (
       <div>
         <h2>
@@ -13,6 +9,5 @@ export default function Weather({ weather }) {
         <h4>Humidity: {weather.main.humidity}%</h4>
         <h4>Wind Speed: {weather.wind.speed} m/s</h4>
       </div>
-    );
-  }
-  
+    )  
+}
