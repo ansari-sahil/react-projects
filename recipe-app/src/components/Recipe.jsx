@@ -1,5 +1,6 @@
 export default function Recipe({recipe}){
-    const ingredients = recipe.ingredients;
+    const url = recipe.url
+    const ingredients = recipe.ingredientLines;
     console.log(ingredients);
     return (
         <div>
@@ -7,9 +8,10 @@ export default function Recipe({recipe}){
             <p>{recipe.description}</p>
             <ul>
                 {ingredients.map((ingredient, index) => (
-                    <li key={index}>{ingredient.text}</li>
+                    <li key={index}>{ingredient}</li>
                 ))}
             </ul>
+            <a href={url} target="_blank" rel="noopener noreferrer">View Recipe</a>
         </div>
     );
 };
