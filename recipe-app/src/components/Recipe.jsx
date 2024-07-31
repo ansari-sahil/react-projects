@@ -1,5 +1,4 @@
 export default function Recipe({recipe}){
-    const url = recipe.url
     const ingredients = recipe.ingredientLines;
     console.log(ingredients);
     return (
@@ -11,7 +10,7 @@ export default function Recipe({recipe}){
                     <li key={index}>{ingredient}</li>
                 ))}
             </ul>
-            <a href={url} target="_blank" rel="noopener noreferrer">View Recipe</a>
+            <a href={recipe.url} target="_blank" rel="noopener noreferrer">View Recipe</a>
         </div>
     );
 };
