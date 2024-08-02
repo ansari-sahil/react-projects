@@ -10,7 +10,7 @@ import NextIcon from "../layout/NextIcon";
 
 export default function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [questions, setQuestions] = useState([
+  const [questions] = useState([
     {
       id: 1,
       question: "What is the capital of France?",
