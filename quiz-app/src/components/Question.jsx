@@ -7,7 +7,7 @@ export default function Question({ data, selectedAnswer, handleAnswer }) {
           style={{
             display: "flex",
             justifyContent: "space-evenly",
-            gap: "1",
+            alignItems: "center",
           }}
         >
           {data.options.map((option, index) => {
