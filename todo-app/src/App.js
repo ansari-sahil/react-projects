@@ -14,7 +14,6 @@ export default function App() {
           <Route path="/todos" element={<Todos />} />
           <Route path="*" element={<Login />} />
         </Routes>
-        {/* <Todos/> */}
       </TodoProvider>
     </>
   );
